@@ -1,35 +1,67 @@
-h1{
-    background-color: brown;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-span{
-    background-color: cornflowerblue;
+body{
+    width: 100%;
+    background-image: url(sky.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-div{
-    background-color: coral;
-    width: 200px;
-    height: 100px;
-    
-    
+nav{
+    width: 100%;
+    background-color: chocolate;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 120px;
 }
-img{
-    width: 500px;
+nav h1{
+    font-size: 32px;
+    font-family: sans-serif;
+    color: azure;
+    text-transform: uppercase;
+    float: left;
 }
-h1:hover{
-    background-color: darkgreen;
+nav ul{
+    float: right;
 }
-li{
-    color: crimson;
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
 }
-li:first-child{
-    color: darkolivegreen;
-}
-ul:hover{
-    background-color: darkslategrey;
-}
-img{
-    width: 200px;
 
+nav ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: azure;
+    font-size: 17px;
+    padding: 0px 16px;
+    display: block;
 }
-input{
-
+nav ul li a:hover{
+ background-color: sandybrown;
+}
+nav ul li ul{
+    position: absolute;
+    display: none;
+    background-color: chocolate;
+    border-radius: 0px 0px 5px 5px;
+}
+nav ul li:hover ul{
+    display: block;
+    transition: 
+}
+nav ul li ul li{
+    line-height: 1;
+    width: 190px;
+    border-radius: 5px;
+    padding: 6px;
+}
+nav ul li ul li a{
+    padding: 10px 16px;
+}
+nav ul li ul li a:hover{
+    background-color: sandybrown;
 }
